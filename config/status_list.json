@@ -1,0 +1,12 @@
+{
+    "success": {
+        "LWS001":"Success"
+    },
+    "error": {
+        "LWE003":"not_found",
+        "LWE005":"error_query",
+        "LWE004":"method_not_allow",
+        "LWE007":"not_exists",
+        "LWE999":"an_unknown_error"
+    }
+}

@@ -1,0 +1,10 @@
+<FilesMatch "^output.html$">
+	AuthType Basic
+	AuthName "Password"
+	AuthUserFile "E:\EFYVN\WWW\Trien khai\ebhxh-v3\api-ebhxh-v3\.htpasswd"
+	Require valid-user
+</FilesMatch>
+
+RewriteEngine on
+RewriteBase /api/wiki
+RewriteRule ^v3$ main/dist/3.0/output.html [L]

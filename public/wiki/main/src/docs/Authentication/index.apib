@@ -1,0 +1,56 @@
+# Group Authentication
+
+## Đăng nhập tài khoản [POST /login]
+
+**Endpoint information**
+
+|                         |     |
+|-------------------------|-----|
+| Requires authentication | No |
+
++ Request (application/json)
+	+ Headers
+	    Accept: application/json; charset=UTF-8
+    + Attributes
+        + username: `ninhtqse` (string, required) - tên đăng nhập
+        + password: `QXR0mi38a2` (string, required) - mật khẩu
+
++ Response 200 (application/json)
+    + Attributes
+        + status: `success|error` (string) - Trạng thái thành công hoặc lỗi
+        + code: `FWS001` (string) - Mã trả về
+        + data (
+            + access_token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....` (string) - JSON Web Token.
+            + expires_in: `7200` (string) - Thời gian sống tính theo giây mặc định là 7200 giây.
+            + refresh_token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....` (string) - JSON Web Token.
+        )
+        + message: `Thành công` (string) - Nội dung trả về
+
+
+
+## Refresh token [POST /login/refresh]
+
+Lấy lại token mới
+
+**Endpoint information**
+
+|                         |     |
+|-------------------------|-----|
+| Requires authentication | No |
+
++ Request (application/json)
+    + Headers
+        Accept: application/json; charset=UTF-8
+    + Attributes
+        + refresh_token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....` (string, required) - Refresh token
+
++ Response 200 (application/json)
+    + Attributes
+        + status: `success|error` (string) - Trạng thái thành công hoặc lỗi
+        + code: `FWS001` (string) - Mã trả về
+        + data (
+            + access_token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....` (string) - JSON Web Token.
+            + expires_in: `7200` (string) - Thời gian sống tính theo giây mặc định là 7200 giây.
+            + refresh_token: `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9....` (string) - JSON Web Token.
+        )
+        + message: `Thành công` (string) - Nội dung trả về
