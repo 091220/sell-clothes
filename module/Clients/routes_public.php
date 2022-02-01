@@ -1,5 +1,5 @@
-<?php 
+<?php
 
 $router->get('/',function(){
-    return 'home';
+    return view('admin.logins.login');
 });
