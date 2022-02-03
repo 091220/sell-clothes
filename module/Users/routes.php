@@ -1,4 +1,5 @@
-<?php 
+<?php
 
-$router->get('/users','UserController@getAll');
-$router->post('/users','UserController@createUser');
+$router->group(['prefix' => '/admin'], function () use ($router){
+    $router->get('/dashboard', 'UserController@getDashBoard');
+});

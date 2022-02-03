@@ -101,21 +101,25 @@
         <div class="login-wrap animated flipInX">
             <div class="login-block">
                 <img src="images/users/default-user.jpg" class="img-circle not-logged-avatar">
-                <form role="form" action="http://themesground.com/nexus-admin/template3/HTML/index.html">
+                <form role="form" action="{{route('login')}}" method="POST">
+                    @csrf
                     <div class="form-group login-input">
                         <i class="fa fa-user overlay"></i>
-                        <input type="text" class="form-control text-input" placeholder="Username">
+                        <input type="text" class="form-control text-input" placeholder="Email" name="login[email]">
                     </div>
                     <div class="form-group login-input">
                         <i class="fa fa-key overlay"></i>
-                        <input type="password" class="form-control text-input" placeholder="********">
+                        <input type="password" class="form-control text-input" placeholder="********" name="login[password]">
                     </div>
+                    @if(session()->has('LoginFail'))
+                        <p class="text-danger text-center" >Email or password is incorrect.</p>
+                    @endif
                     <div class="row">
                         <div class="col-sm-6">
-                            <button type="submit" class="btn btn-login btn-block">LOGIN</button>
+                            <button type="submit" class="btn btn-login btn-block">Login</button>
                         </div>
                         <div class="col-sm-6">
-                            <a href="register.html" class="btn btn-reg btn-block">Register</a>
+                            <a href="" class="btn btn-reg btn-block">Register</a>
                         </div>
                     </div>
                 </form>
