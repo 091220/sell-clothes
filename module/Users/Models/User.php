@@ -10,7 +10,7 @@ class User extends Authenticatable
 
     use Uuids;
 
-    protected $guarded = [];
+    protected $guarded = []; // don't insert or update field in array
 
     protected $hidden = [    // don't get field in array
         'password',

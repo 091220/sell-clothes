@@ -196,12 +196,9 @@
                     <li>
                         <a href='index-2.html'><i class="fa fa-home"></i> <span>Dashboard</span></a>
                     </li>
-                    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-th"></i><span>Forms</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+                    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-th"></i><span>Users</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
                         <ul>
-                            <li><a href='forms.html'><span>Form Elements</span></a></li>
-                            <li><a href='form-wizard.html'><span>Form Wizard</span></a></li>
-                            <li><a href='form-validation.html'><span>Form Validation</span></a></li>
-                            <li><a href='form-uploads.html'><span>File Uploads</span></a></li>
+                            <li><a href="{{url('/admin/users')}}"><span>List User</span></a></li>
                         </ul>
                     </li>
                 </ul>
