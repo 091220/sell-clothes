@@ -194,7 +194,7 @@
             <div id="sidebar-menu">
                 <ul>
                     <li>
-                        <a href='index-2.html'><i class="fa fa-home"></i> <span>Dashboard</span></a>
+                        <a href="{{url('/admin/dashboard')}}"><i class="fa fa-home"></i> <span>Dashboard</span></a>
                     </li>
                     <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-th"></i><span>Users</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
                         <ul>
