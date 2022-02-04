@@ -25,6 +25,11 @@
     <link href="assets/libs/jquery-icheck/skins/all.css" rel="stylesheet" />
     <!-- Code Highlighter for Demo -->
     <link href="assets/libs/prettify/github.css" rel="stylesheet" />
+    <!-- For Blog -->
+    <link rel="stylesheet" href="assets/libs/jquery-jvectormap/css/jquery-jvectormap-1.2.2.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap-datepicker/css/datepicker.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link href="assets/libs/summernote/summernote.css" rel="stylesheet" type="text/css" />
     <!-- Extra CSS Libraries Start -->
     <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
     <link href="assets/css/main.css" rel="stylesheet" type="text/css" />
@@ -201,6 +206,11 @@
                             <li><a href="{{url('/admin/users')}}"><span>List User</span></a></li>
                         </ul>
                     </li>
+                    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-th"></i><span>Blogs</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+                        <ul>
+                            <li><a href="{{url('/admin/blogs')}}"><span>List Blog</span></a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="sidebar-plan">
@@ -236,6 +246,7 @@
 <script src="assets/libs/fastclick/js/fastclick.js"></script>
 <script src="assets/libs/jquery-blockui/jquery.blockUI.js"></script>
 <script src="assets/libs/bootstrap-bootbox/bootbox.min.js"></script>
+<script src="assets/libs/jquery-slimscroll/jquery.slimscroll.js"></script>
 <script src="assets/libs/jquery-sparkline/jquery-sparkline.js"></script>
 <script src="assets/libs/nifty-modal/js/classie.js"></script>
 <script src="assets/libs/nifty-modal/js/modalEffects.js"></script>
