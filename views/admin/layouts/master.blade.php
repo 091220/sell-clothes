@@ -174,11 +174,11 @@
                                 <li class="divider"></li>
                                 <li><a href="#"><i class="icon-help-2"></i> Help</a></li>
                                 <li><a href="lockscreen.html"><i class="icon-lock-1"></i> Lock me</a></li>
-                                <li><a class="md-trigger" data-modal="logout-modal"><i class="icon-logout-1"></i> Logout</a></li>
+                                <li><a class="md-trigger" data-modal="logout-modal" href="{{url('/admin/logout')}}"><i class="icon-logout-1"></i> Logout</a></li>
                             </ul>
                         </li>
                         <li class="right-opener">
-                            <a href="#" class=""><i class="fa fa-power-off" aria-hidden="true"></i></a>
+                            <a href="{{url('/admin/logout')}}" class=""><i class="fa fa-power-off" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
