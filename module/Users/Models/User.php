@@ -17,6 +17,8 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    protected $casts = ['id' => 'string']; // convert datatype 'id' -> 'string' when getting
+
     public function setPasswordAttribute($value)    // set password -> bcrypt when insert or update
     {
         $this->attributes['password'] = password_hash($value, PASSWORD_BCRYPT);

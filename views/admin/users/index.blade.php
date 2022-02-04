@@ -27,7 +27,7 @@
                                 </div>
                                 <div class="col-md-8">
                                     <div class="toolbar-btn-action">
-                                        <a class="btn btn-success"><i class="fa fa-plus-circle"></i> Add User</a>
+                                        <a class="btn btn-success" href="{{url('/admin/users/create')}}"><i class="fa fa-plus-circle"></i> Add User</a>
                                     </div>
                                 </div>
                             </div>
@@ -66,8 +66,11 @@
                                         @endif
                                         <td>
                                             <div class="btn-group btn-group-xs">
-                                                <a data-toggle="tooltip" title="Off" class="btn btn-default"><i class="fa fa-power-off"></i></a>
-                                                <a data-toggle="tooltip" title="Edit" class="btn btn-default"><i class="fa fa-edit"></i></a>
+                                                <a data-toggle="tooltip" title="Edit" class="btn btn-default" href="{{url('admin/users/edit/'.$user->id)}}"><i class="fa fa-edit"></i></a>
+                                                <a data-toggle="tooltip" title="Delete" class="btn btn-default" href="{{url('admin/users/delete/'.$user->id)}}"><i class="fa fa-trash-o"></i></a>
+                                                @if ($user->is_locked == 0)
+                                                    <a data-toggle="tooltip" title="Lock" class="btn btn-default" href="{{url('admin/users/lock/'.$user->id)}}"><i class="fa fa-power-off"></i></a>
+                                                @endif
                                             </div>
                                         </td>
                                     </tr>

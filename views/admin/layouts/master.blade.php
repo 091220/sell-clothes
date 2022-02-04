@@ -52,7 +52,7 @@
     <div class="topbar">
         <div class="topbar-left">
             <div class="logo">
-                <h1><a href="index-2.html">Nexus</a></h1>
+                <h1><a href="{{url('/admin/dashboard')}}">Nexus</a></h1>
             </div>
         </div>
         <!-- Button mobile view to collapse sidebar menu -->
