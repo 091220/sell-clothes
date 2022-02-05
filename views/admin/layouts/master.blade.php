@@ -211,6 +211,11 @@
                             <li><a href="{{url('/admin/blogs')}}"><span>List Blog</span></a></li>
                         </ul>
                     </li>
+                    <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-th"></i><span>Products</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
+                        <ul>
+                            <li><a href="{{url('/admin/products/attributes')}}"><span>List Attribute</span></a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <div class="sidebar-plan">
