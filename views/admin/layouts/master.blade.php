@@ -214,6 +214,7 @@
                     <li class='has_sub'><a href='javascript:void(0);'><i class="fa fa-th"></i><span>Products</span> <span class="pull-right"><i class="fa fa-angle-down"></i></span></a>
                         <ul>
                             <li><a href="{{url('/admin/products/attributes')}}"><span>List Attribute</span></a></li>
+                            <li><a href="{{url('/admin/products/categories')}}"><span>List Category</span></a></li>
                         </ul>
                     </li>
                 </ul>
