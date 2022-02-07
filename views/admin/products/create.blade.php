@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="widget-content padding">
-                        <form role="form" id="contactForm" action="{{route('product.create')}}" method="POST">
+                        <form role="form" id="contactForm" action="{{route('product.create')}}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="form-group col-lg-6">
                                 <label>Category</label>

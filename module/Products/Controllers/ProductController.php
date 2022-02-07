@@ -43,7 +43,11 @@ class ProductController extends Controller
 
     public function create(Request $request)
     {
-        dd($request->all());
+        $product = $request->product;
+        $productDetails = $request->product_details;
+        $attributeProducts = $request->attribute_products;
+        $this->productService->create($product, $productDetails, $attributeProducts);
+        return redirect('/admin/products');
     }
 
 }
