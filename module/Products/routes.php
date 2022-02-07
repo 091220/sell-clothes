@@ -1,6 +1,13 @@
 <?php
 
 $router->group(['prefix' => '/admin'], function () use ($router){
+    //products
+    $router->get('/products', 'ProductController@getAll');
+    $router->get('/products/create','ProductController@getCreate');
+    $router->post('/products/create','ProductController@create')->name('product.create');
+    $router->get('/products/edit/{id}','ProductController@getEdit');
+    $router->post('/products/edit/{id}','ProductController@edit')->name('product.edit');
+    $router->get('/products/delete/{id}', 'ProductController@delete');
     //categories
     $router->get('/products/categories', 'CategoryController@getAll');
     $router->get('/products/categories/create','CategoryController@getCreate');
