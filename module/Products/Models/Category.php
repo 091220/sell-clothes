@@ -12,6 +12,4 @@ class Category extends Model
 
     protected $guarded = [];
 
-    protected $casts = ['id' => 'string'];
-
 }

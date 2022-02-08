@@ -12,8 +12,6 @@ class ProductDetail extends Model
 
     protected $guarded = [];
 
-    protected $casts = ['id' => 'string'];
-
     public function product()
     {
         return $this->belongsTo(Product::class);

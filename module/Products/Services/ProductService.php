@@ -41,7 +41,6 @@ class ProductService
         \DB::beginTransaction();
         try {
             $productData = $this->productRepository->create($product);
-            dd($productData);
             $productDetailData = [];
             $attributeProductData = [];
             foreach ($productDetails as $key => $productDetail) {
